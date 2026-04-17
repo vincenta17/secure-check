@@ -1,0 +1,7 @@
+.env
+__pycache__/
+*.pkl
+*.hprof
+*.apk
+*.so
+build/

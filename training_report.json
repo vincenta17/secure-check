@@ -1,0 +1,175 @@
+{
+  "best_model": "Stacking_Ensemble",
+  "dataset_rows": 87237,
+  "dataset_columns": 112,
+  "train_size": 69789,
+  "test_size": 17448,
+  "model_results": {
+    "RandomForest": {
+      "accuracy": 0.9615,
+      "precision": 0.931,
+      "recall": 0.9613,
+      "f1": 0.9459,
+      "training_time": 4.9,
+      "confusion_matrix": [
+        [
+          10910,
+          435
+        ],
+        [
+          236,
+          5867
+        ]
+      ]
+    },
+    "XGBoost": {
+      "accuracy": 0.97,
+      "precision": 0.9542,
+      "recall": 0.9603,
+      "f1": 0.9573,
+      "training_time": 5.0,
+      "confusion_matrix": [
+        [
+          11064,
+          281
+        ],
+        [
+          242,
+          5861
+        ]
+      ]
+    },
+    "SVM": {
+      "accuracy": 0.8131,
+      "precision": 0.7682,
+      "recall": 0.6669,
+      "f1": 0.714,
+      "training_time": 556.1,
+      "confusion_matrix": [
+        [
+          10117,
+          1228
+        ],
+        [
+          2033,
+          4070
+        ]
+      ]
+    },
+    "MLP_NeuralNet": {
+      "accuracy": 0.9606,
+      "precision": 0.9476,
+      "recall": 0.9392,
+      "f1": 0.9434,
+      "training_time": 33.8,
+      "confusion_matrix": [
+        [
+          11028,
+          317
+        ],
+        [
+          371,
+          5732
+        ]
+      ]
+    },
+    "Stacking_Ensemble": {
+      "accuracy": 0.9704,
+      "precision": 0.9553,
+      "recall": 0.9603,
+      "f1": 0.9578,
+      "training_time": 88.8,
+      "confusion_matrix": [
+        [
+          11071,
+          274
+        ],
+        [
+          242,
+          5861
+        ]
+      ]
+    }
+  },
+  "feature_importance": [
+    {
+      "rank": 1,
+      "feature": "qty_slash_url",
+      "importance": 0.282093
+    },
+    {
+      "rank": 2,
+      "feature": "directory_length",
+      "importance": 0.116398
+    },
+    {
+      "rank": 3,
+      "feature": "qty_hyphen_directory",
+      "importance": 0.092947
+    },
+    {
+      "rank": 4,
+      "feature": "qty_dot_directory",
+      "importance": 0.071102
+    },
+    {
+      "rank": 5,
+      "feature": "tld_present_params",
+      "importance": 0.027267
+    },
+    {
+      "rank": 6,
+      "feature": "qty_percent_file",
+      "importance": 0.025392
+    },
+    {
+      "rank": 7,
+      "feature": "qty_dot_domain",
+      "importance": 0.024824
+    },
+    {
+      "rank": 8,
+      "feature": "url_shortened",
+      "importance": 0.023566
+    },
+    {
+      "rank": 9,
+      "feature": "qty_dot_params",
+      "importance": 0.020531
+    },
+    {
+      "rank": 10,
+      "feature": "time_domain_activation",
+      "importance": 0.01757
+    },
+    {
+      "rank": 11,
+      "feature": "qty_slash_directory",
+      "importance": 0.015256
+    },
+    {
+      "rank": 12,
+      "feature": "qty_hyphen_params",
+      "importance": 0.015151
+    },
+    {
+      "rank": 13,
+      "feature": "qty_tld_url",
+      "importance": 0.014812
+    },
+    {
+      "rank": 14,
+      "feature": "qty_plus_url",
+      "importance": 0.012816
+    },
+    {
+      "rank": 15,
+      "feature": "qty_plus_params",
+      "importance": 0.012689
+    }
+  ],
+  "cv_f1_mean": 0.9595,
+  "cv_f1_std": 0.0022,
+  "needs_scaler": true,
+  "optimal_threshold": 0.2942569677053614
+}
